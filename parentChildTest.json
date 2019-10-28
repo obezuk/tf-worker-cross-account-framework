@@ -1,0 +1,100 @@
+{
+  "parent": {
+    "worker": "parent",
+    "url": "https://parent.obez.uk/",
+    "cf": {
+      "clientTcpRtt": 8,
+      "longitude": "144.97990",
+      "latitude": "-37.84110",
+      "tlsCipher": "ECDHE-ECDSA-CHACHA20-POLY1305",
+      "continent": "OC",
+      "asn": 7545,
+      "country": "AU",
+      "tlsClientAuth": {
+        "certIssuerDNLegacy": "",
+        "certIssuerDN": "",
+        "certIssuerDNRFC2253": "",
+        "certSubjectDNLegacy": "",
+        "certVerified": "NONE",
+        "certNotAfter": "",
+        "certSubjectDN": "",
+        "certFingerprintSHA1": "",
+        "certNotBefore": "",
+        "certSerial": "",
+        "certPresented": "0",
+        "certSubjectDNRFC2253": ""
+      },
+      "tlsVersion": "TLSv1.2",
+      "colo": "MEL",
+      "timezone": "Australia/Melbourne",
+      "region": "Victoria",
+      "postalCode": "3004",
+      "clientTrustScore": 1,
+      "regionCode": "VIC",
+      "requestPriority": "weight=16;exclusive=0;group=0;group-weight=0",
+      "edgeRequestKeepAliveStatus": 1,
+      "httpProtocol": "HTTP/2",
+      "city": "Melbourne"
+    },
+    "requestHeaders": {
+      "accept": "*/*",
+      "accept-encoding": "gzip",
+      "cf-connecting-ip": "118.211.143.78",
+      "cf-int-smart-routing-table-id": "100",
+      "cf-ipcountry": "AU",
+      "cf-ray": "52c8a8e6ac20df81",
+      "cf-visitor": "{\"scheme\":\"https\"}",
+      "connection": "Keep-Alive",
+      "host": "parent.obez.uk",
+      "true-client-ip": "118.211.143.78",
+      "user-agent": "curl/7.54.0",
+      "x-forwarded-proto": "https",
+      "x-real-ip": "118.211.143.78"
+    },
+    "child": {
+      "worker": "child",
+      "url": "https://child.saas.obez.uk/parent-to-child-subrequest",
+      "cf": {
+        "longitude": "-97.82200",
+        "httpProtocol": "HTTP/1.1",
+        "timezone": "America/Chicago",
+        "continent": "NA",
+        "asn": 132892,
+        "requestPriority": "",
+        "latitude": "37.75100",
+        "country": "US",
+        "edgeRequestKeepAliveStatus": 1,
+        "clientTrustScore": 1,
+        "tlsCipher": "",
+        "tlsVersion": "",
+        "tlsClientAuth": {
+          "certIssuerDNLegacy": "",
+          "certIssuerDN": "",
+          "certIssuerDNRFC2253": "",
+          "certSubjectDNLegacy": "",
+          "certVerified": "NONE",
+          "certNotAfter": "",
+          "certSubjectDN": "",
+          "certFingerprintSHA1": "",
+          "certNotBefore": "",
+          "certSerial": "",
+          "certPresented": "0",
+          "certSubjectDNRFC2253": ""
+        },
+        "colo": "MEL"
+      },
+      "requestHeaders": {
+        "accept-encoding": "gzip",
+        "cf-connecting-ip": "2a06:98c0:3600::103",
+        "cf-ipcountry": "US",
+        "cf-ray": "52c8a8e6c543df81",
+        "cf-visitor": "{\"scheme\":\"https\"}",
+        "cf-worker": "obez.uk",
+        "connection": "Keep-Alive",
+        "host": "child.saas.obez.uk",
+        "x-forwarded-proto": "https",
+        "x-real-ip": "2a06:98c0:3600::103"
+      }
+    }
+  }
+}
